@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizziz</title>
+    <link rel="stylesheet" href="css/questions.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body onload="lancerQuestion()">
+    <main>
+        <h1>QUIZZIZ</h1>
+        <div id="barres">
+            <div id="progression">
+                <div id="remplissage-progress">
+
+                </div>
+            </div>
+
+            <div id="temps">
+                <div id="remplissage-temps">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="quizz">
+            <div class="question-reponses">
+                <div class="question">
+                    <p class="texte-question">En quelle année est sortie Summoners War: Sky Arena ?</p>
+                </div>
+                <div class="reponses">
+                    <button id="A" class="bouton-reponse" onclick="recupId(id)">2016</button>
+                    <button id="B" class="bouton-reponse" onclick="recupId(id)">2022</button>
+                    <button id="C" class="bouton-reponse vrai" onclick="recupId(id)">2014</button>
+                    <button id="D" class="bouton-reponse" onclick="recupId(id)">2012</button>
+                </div>
+            </div>
+
+            <div class="question-reponses">
+                <div class="question">
+                    <p class="texte-question">Quel est le rang le plus haut dans les contenus PVP ?</p>
+                </div>
+                <div class="reponses">
+                    <button id="E" class="bouton-reponse" onclick="recupId(id)">Gardien</button>
+                    <button id="f" class="bouton-reponse vrai" onclick="recupId(id)">Legende</button>
+                    <button id="G" class="bouton-reponse" onclick="recupId(id)">Combattant</button>
+                    <button id="H" class="bouton-reponse" onclick="recupId(id)">Master</button>
+                </div>
+            </div>
+
+            <div class="question-reponses">
+                <div class="question">
+                    <p class="texte-question">Quel est le monstre qui s'appelle Seimei ?</p>
+                </div>
+                <div class="reponses">
+                    <button id="I" class="bouton-reponse vrai" onclick="recupId(id)">Onmyouji Lumière</button>
+                    <button id="J" class="bouton-reponse" onclick="recupId(id)">Oracle Eau</button>
+                    <button id="K" class="bouton-reponse" onclick="recupId(id)">Dame de l'Enfer feu</button>
+                    <button id="L" class="bouton-reponse" onclick="recupId(id)">Surfeur Céleste Ténèbre</button>
+                </div>
+            </div>
+
+            <div class="question-reponses">
+                <div class="question">
+                    <p class="texte-question">Quel est le pourcentage d'activation du set violent ?</p>
+                </div>
+                <div class="reponses">
+                    <button id="M" class="bouton-reponse" onclick="recupId(id)">27%</button>
+                    <button id="N" class="bouton-reponse" onclick="recupId(id)">25%</button>
+                    <button id="O" class="bouton-reponse vrai" onclick="recupId(id)">22%</button>
+                    <button id="P" class="bouton-reponse" onclick="recupId(id)">20%</button>
+                </div>
+            </div>
+
+            <div class="question-reponses">
+                <div class="question">
+                    <p class="texte-question">Qui est le champion du monde de 2021 ?</p>
+                </div>
+                <div class="reponses">
+                    <button id="Q" class="bouton-reponse" onclick="recupId(id)">Tomato</button>
+                    <button id="R" class="bouton-reponse" onclick="recupId(id)">Pinkroid</button>
+                    <button id="S" class="bouton-reponse" onclick="recupId(id)">Rosith</button>
+                    <button id="T" class="bouton-reponse vrai" onclick="recupId(id)">Diligent</button>
+                </div>
+            </div>
+
+            <div class="question-reponses">
+                <p id="score">Votre score: <span id="resultat"></span>/5</p>
+                <label for="pseudo">Enregistrer son score ?</label>
+                <input type="text" placeholder="Pseudo" id="pseudo">
+                <button id="sauvegarder">Sauvegarder</button>
+                <button id="voir-score">Voir score</button>
+            </div>
+        </div>
+
+        <div id="tableau-score">
+            <h2>Tableau des scores</h2>
+            <ul></ul>
+        </div>
+
+    </main>
+    <script src="js/js.js"></script>
+</body>
+</html>
